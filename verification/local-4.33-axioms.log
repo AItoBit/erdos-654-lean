@@ -1,0 +1,29 @@
+Erdos654.optimalPinnedCount (size : ℕ) : ℕ
+Erdos654.NoFourConcyclic (points : Finset Erdos654.Point) : Prop
+Erdos654.strongQuestion : Prop
+Erdos654.weakQuestion : Prop
+theorem Erdos654.not_strongQuestion : ¬Erdos654.strongQuestion :=
+<not imported>
+'Erdos654.not_strongQuestion' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos654.counterexampleFamily' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos654.third_lower_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP000530.not_asymptotically_all_distances' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP000530.counterexample_family' depends on axioms: [propext, Classical.choice, Quot.sound]
+Palomar654.counterexample_family (parameter : ℕ) :
+  ∃ points,
+    points.card = 4 * parameter ∧
+      Palomar654.NoFourConcyclic points ∧
+        ∀ point ∈ points, (Palomar654.distanceValues points point).card < 3 * parameter
+Palomar654.not_near_linear :
+  ¬∀ (epsilon : ℝ),
+      0 < epsilon →
+        ∃ cutoff,
+          ∀ (points : Finset ℂ),
+            cutoff ≤ points.card →
+              Palomar654.NoFourConcyclic points →
+                ∃ point ∈ points, (1 - epsilon) * ↑points.card ≤ ↑(Palomar654.distanceValues points point).card
+Palomar654.third_lower_bound (points : Finset ℂ) (point : ℂ) (noFour : Palomar654.NoFourConcyclic points)
+  (point_mem : point ∈ points) : points.card - 1 ≤ 3 * (Palomar654.distanceValues points point).card
+'Palomar654.counterexample_family' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Palomar654.not_near_linear' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Palomar654.third_lower_bound' depends on axioms: [propext, Classical.choice, Quot.sound]

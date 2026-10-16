@@ -1,0 +1,23 @@
+name = "erdos654"
+defaultTargets = ["Erdos654", "Solution"]
+
+[leanOptions]
+autoImplicit = false
+relaxedAutoImplicit = false
+
+[[require]]
+name = "mathlib"
+scope = "leanprover-community"
+rev = "v4.33.1"
+
+[[lean_lib]]
+name = "Erdos654"
+
+[[lean_lib]]
+name = "Challenge"
+
+[lean_lib.leanOptions]
+warn.sorry = false
+
+[[lean_lib]]
+name = "Solution"

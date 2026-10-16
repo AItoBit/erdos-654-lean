@@ -1,0 +1,97 @@
+version: "v0.4"
+project:
+  name: "Erdős 654: the two-axis counterexample and elementary lower bound"
+  description: >-
+    A reproduction of the known negative answer to the near-linear part of
+    Erdős Problem 654. Arbitrarily large planar configurations have no four
+    concyclic points and fewer than three quarters as many distinct distances
+    from every selected point. The elementary one-third lower bound is also
+    proved. The fixed improvement above one third and general-position
+    questions are not resolved.
+  authors:
+    - name: "ketianzhang1-lang"
+      github: "ketianzhang1-lang"
+    - name: "AItoBit"
+      github: "AItoBit"
+  license: "MIT"
+  responsible_maintainers:
+    - name: "AItoBit"
+      github: "AItoBit"
+classification:
+  arxiv: ["math.CO", "math.MG"]
+  msc2020: ["52C10", "68V15"]
+sources:
+  - title: "Semi-Autonomous Mathematics Discovery with Gemini: A Case Study on the Erdős Problems"
+    authors: ["Tony Feng", "Trieu Trinh", "Garrett Bingham", "Jiwon Kang", "Shengtong Zhang", "Sang-hyun Kim", "Kevin Barreto", "Carl Schildkraut", "Junehyuk Jung", "Jaehyeon Seo", "Carlo Pagano", "Yuri Chervonyi", "Dawsen Hwang", "Kaiying Hou", "Sergei Gukov", "Cheng-Chiang Tsai", "Hyunwoo Choi", "Youngbeom Jin", "Wei-Yuan Li", "Hao-An Wu", "Ruey-An Shiu", "Yu-Sheng Shih", "Quoc V. Le", "Thang Luong"]
+    id: "arXiv:2601.22401v3"
+    type: "article"
+    location: "https://arxiv.org/abs/2601.22401v3"
+    relationship: "adapts"
+    note: "Section 3.1. The reproduced formal proof uses parity-separated coordinates instead of powers of two and three."
+    author_endorsement: "not-contacted"
+  - title: "Erdős Problem 654"
+    authors: ["Thomas F. Bloom"]
+    contributors:
+      - name: "Paul Erdős"
+        role: "problem proposer"
+    type: "problem catalogue"
+    location: "https://www.erdosproblems.com/654"
+    relationship: "formalizes"
+    note: "Negative near-linear part and elementary baseline only. The other questions are recorded, not proved."
+    author_endorsement: "not-contacted"
+related_formalizations:
+  - id: "https://github.com/ketianzhang1-lang/jsp-000301-lean/blob/fb8577233935d1ff4533418ff8ea33a4d7dab101/projects/jsp-000530/JSP000530.lean"
+    relationship: "adapts"
+    note: "The substantive TwoAxis proof is reproduced with module visibility declarations and its MIT licence. The entire proof source is present in this repository, not an external imported wrapper dependency."
+status:
+  scope: >-
+    Proves the arbitrary-size two-axis counterexample, the quantified negative
+    near-linear assertion, and the elementary one-third bound. Defines the
+    extremal function and records the remaining questions as propositions.
+    No solution of the weaker improvement or general-position questions is claimed.
+  sorry_count: 0
+  sorry_in_definitions: 0
+  axioms: []
+automation:
+  methods:
+    - method: "agent"
+      models: ["Codex"]
+      framework: "Codex desktop"
+      tool_setup: "Lean compiler, Mathlib tactics, separate automated source and proof audits"
+      cost:
+        wall_time: "not tracked"
+        spend_usd: "not tracked"
+        hardware: "local Windows machine and GitHub Actions"
+      prompting_notes: "Reproduce the exact known counterexample, preserve provenance, and distinguish all open variants."
+  spend_usd: "not tracked"
+  notes: "Human-directed adaptation. The original source also reports OpenAI assistance. Automated agent review is not independent human expert review."
+fidelity:
+  divergences: >-
+    The Euclidean plane is represented by complex numbers with their standard
+    metric. Even/odd coordinates replace the source's powers of two/three.
+    Only the negative near-linear part and elementary baseline are proved.
+    The website's centered-circle near-linear pairing remains source-disputed
+    and is not a registered theorem.
+review:
+  status: "automated source and proof audit; no human expert review claimed"
+  reviewers: []
+  notes: "Separate source/status and proof-audit agents inspected source fidelity, parity obstruction, circle geometry, cardinalities, and quantifier uniformity. Principal Lean axioms are audited separately."
+alignment:
+  namespace: "Palomar654"
+  statements:
+    - source: "Feng et al., Section 3.1, Theorem 3 and construction"
+      lean: "Palomar654.counterexample_family"
+      module: "Solution"
+      status: "adapted"
+      note: "Parity construction with the same arbitrary-size and distance-count conclusion."
+    - source: "Erdős Problem 654, near-linear question"
+      lean: "Palomar654.not_near_linear"
+      module: "Solution"
+      status: "proved"
+      note: "Negative answer without a no-three-collinear condition."
+    - source: "Erdős Problem 654, elementary lower bound"
+      lean: "Palomar654.third_lower_bound"
+      module: "Solution"
+      status: "proved"
+      note: "Integral form at every selected point; no positive improvement asserted."
+acknowledgements: "Original formalization contributors, Aletheia and Feng et al., Mathlib contributors, and Lean developers."

@@ -1,0 +1,18 @@
+{
+  "challenge_module": "Challenge",
+  "solution_module": "Solution",
+  "theorem_names": [
+    "Palomar654.counterexample_family",
+    "Palomar654.not_near_linear",
+    "Palomar654.third_lower_bound"
+  ],
+  "definition_names": [
+    "Palomar654.distanceValues",
+    "Palomar654.NoFourConcyclic"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

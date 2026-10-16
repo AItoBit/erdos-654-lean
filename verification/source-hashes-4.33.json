@@ -1,0 +1,34 @@
+[
+  {
+    "Path": "C:\\Users\\Usuario\\Downloads\\erdos\\erdos654-lean\\Audit.lean",
+    "Hash": "D4A30432825B50815732B039CFE61347D521A52E7FCE986CA54D6C9074A91C28"
+  },
+  {
+    "Path": "C:\\Users\\Usuario\\Downloads\\erdos\\erdos654-lean\\Challenge.lean",
+    "Hash": "E83DDD5531C41591436CF6BB2A41F343B6712492AB380E6FB2782B2AF38946A3"
+  },
+  {
+    "Path": "C:\\Users\\Usuario\\Downloads\\erdos\\erdos654-lean\\Erdos654.lean",
+    "Hash": "E704D6CFE39D3EC53568541CA6F6161CEF20F215674059F91C4048583ADAC185"
+  },
+  {
+    "Path": "C:\\Users\\Usuario\\Downloads\\erdos\\erdos654-lean\\Solution.lean",
+    "Hash": "1F3D2BDEB4A5A34514DF8C4B8AFBBB8CC84D4DECC1E0C500E33E2161017C0FF5"
+  },
+  {
+    "Path": "C:\\Users\\Usuario\\Downloads\\erdos\\erdos654-lean\\Erdos654\\Bridge.lean",
+    "Hash": "641ED59ED82845A24E193E0EC79C30C7040005528B4C0735CA7BC2346BC38F3F"
+  },
+  {
+    "Path": "C:\\Users\\Usuario\\Downloads\\erdos\\erdos654-lean\\Erdos654\\LowerBound.lean",
+    "Hash": "6AE12C132F1C7EA5339F0B77D13A76D106B98538FDDBB8F7C9E93C1BF95F4356"
+  },
+  {
+    "Path": "C:\\Users\\Usuario\\Downloads\\erdos\\erdos654-lean\\Erdos654\\Target.lean",
+    "Hash": "91E540A587E9C96AB1178E3DB4D12620F2E972A9A1A91DE39268CEB9C9AC897E"
+  },
+  {
+    "Path": "C:\\Users\\Usuario\\Downloads\\erdos\\erdos654-lean\\Erdos654\\TwoAxis.lean",
+    "Hash": "1D33C6B9225F7AD1CD15938D76C23C7D585722793B795EA4CB16F98DB5FC5D62"
+  }
+]
