@@ -41,4 +41,3 @@ theorem third_lower_bound (points : Finset ℂ) (point : ℂ)
   sorry
 
 end Palomar654
-

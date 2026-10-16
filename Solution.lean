@@ -41,4 +41,3 @@ theorem third_lower_bound (points : Finset ℂ) (point : ℂ)
   exact Erdos654.third_lower_bound points point noFour point_mem
 
 end Palomar654
-

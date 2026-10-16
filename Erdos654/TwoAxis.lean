@@ -328,4 +328,3 @@ theorem not_asymptotically_all_distances :
   nlinarith [Nat.cast_nonneg (α := ℝ) N]
 
 end JSP000530
-
